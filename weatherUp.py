@@ -4,7 +4,7 @@ import json
 
 # ------------------  Conditions  ---------------------------
 
-f = urllib2.urlopen('http://api.wunderground.com/api/ff68d6a834ef4090/geolookup/conditions/q/CA/Riverside.json')
+f = urllib2.urlopen('http://api.wunderground.com/api/YOUR_API_KEY/geolookup/conditions/q/CA/Riverside.json')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 
@@ -16,7 +16,7 @@ f.close()
 
 # ------------------  Forecasts  ---------------------------
 
-f = urllib2.urlopen('http://api.wunderground.com/api/ff68d6a834ef4090/geolookup/forecast/q/CA/Glendora.json')
+f = urllib2.urlopen('http://api.wunderground.com/api/YOUR_API_KEY/geolookup/forecast/q/CA/Glendora.json')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 
